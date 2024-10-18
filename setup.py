@@ -18,4 +18,3 @@ setup(
     python_requires=">=3.6",
     install_requires=["openai", "langchain", "streamlit", "python-dotenv", "PyPDF2"],
 )
-
