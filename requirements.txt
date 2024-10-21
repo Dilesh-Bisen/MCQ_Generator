@@ -1,6 +1,7 @@
 streamlit
 langchain
 langchain_mistralai
+langchain_community
 pandas
 PyPDF2
 python-dotenv
