@@ -26,7 +26,7 @@ st.set_page_config(
 def load_response_json():
     try:
         with open(
-            "D:/HP_Laptop/Project/04_GenAI/MCQ_Generator/response.json", "r"
+            "response.json", "r"
         ) as file:
             return json.load(file)
     except Exception as e:
