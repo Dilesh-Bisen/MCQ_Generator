@@ -22,7 +22,7 @@ my_key = os.getenv("MISTRAL_API_KEY")
 if my_key is None:
     raise ValueError("MISTRAL_API_KEY is not set.")
 
-print("Loaded MISTRAL_API_KEY successfully.")
+print("Loaded MISTRAL_API_KEY:", my_key) 
 
 llm = ChatMistralAI(
     api_key=my_key,
