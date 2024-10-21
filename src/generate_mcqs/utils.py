@@ -27,17 +27,14 @@ def read_file(file):
 
 def get_table_data(quiz_str):
     try:
-        quiz_str = quiz_str.replace('```', '').strip()  # Removing any Markdown artifacts.
-        quiz_str = quiz_str.lstrip("json\n").strip()  # Cleaning up the string.
+        quiz_str = quiz_str.replace('```', '').strip()  
+        quiz_str = quiz_str.lstrip("json\n").strip()  
         
-        # Check if quiz_str is empty or None
         if not quiz_str:
             raise ValueError("The quiz string is empty or not in a valid format.")
         
-        # Attempt to load quiz_str as JSON
         quiz_dict = json.loads(quiz_str)
         
-        # Check if the required structure exists
         if "quizzes" not in quiz_dict:
             raise ValueError("The JSON structure is not correct. 'quizzes' key is missing.")
         
