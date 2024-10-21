@@ -34,24 +34,28 @@ def load_response_json():
         logging.error(f"Error loading the response.json file: {e}")
         return None
 
-response_json = load_response_json()  
+response_json = load_response_json()
 
 with st.form("user_input"):
 
+    # Allowing file upload or manual text input
     uploaded_file = st.file_uploader("Upload a PDF or text file", type=["pdf", "txt"])
+    
+    # Optional manual text input
+    manual_text_input = st.text_area("Or enter text manually")
 
     mcq_count = st.number_input("Number of MCQs", min_value=0, step=1)
 
     subject = st.text_input("Subject")
 
-    tone_options = ["", "Simple", "Moderate", "Complex"]  
+    tone_options = ["", "Simple", "Moderate", "Complex"]
     tone = st.selectbox("Complexity Level of Questions", options=tone_options)
 
     submit_button = st.form_submit_button("Generate MCQs")
 
     if submit_button:
-        if uploaded_file is None:
-            st.warning("Please upload a file.", icon="⚠️")
+        if uploaded_file is None and not manual_text_input:
+            st.warning("Please upload a file or provide text manually.", icon="⚠️")
         if mcq_count <= 0:
             st.warning("Please enter a number for the number of MCQs.", icon="⚠️")
         if not subject:
@@ -59,13 +63,17 @@ with st.form("user_input"):
         if tone == "":
             st.warning("Please select a complexity level.", icon="⚠️")
 
-        if uploaded_file is not None and subject:
+        if (uploaded_file or manual_text_input) and subject:
             with st.spinner("Loading..."):
                 try:
-                    text = read_file(uploaded_file) 
-                    st.info("File read successfully.")
-
-                    with get_openai_callback() as cb:  
+                    if uploaded_file:
+                        text = read_file(uploaded_file)
+                        st.info("File read successfully.")
+                    else:
+                        text = manual_text_input
+                        st.info("Using manual text input.")
+                    
+                    with get_openai_callback() as cb:
                         try:
                             response = combine_chain.invoke({
                                 "text": text,
