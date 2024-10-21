@@ -19,6 +19,8 @@ load_dotenv()
 
 my_key = os.getenv("MISTRAL_API_KEY")
 
+if my_key is None:
+    raise ValueError("MISTRAL_API_KEY is not set. Please check your .env file.")
 
 llm = ChatMistralAI(
     api_key=my_key,
