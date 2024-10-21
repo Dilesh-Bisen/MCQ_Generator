@@ -1,6 +1,6 @@
 # 📝 MCQ Generator
 
-**Live Demo:** [Try the MCQ Generator here!](https://mcqgenerator-dilesh.streamlit.app/)
+**Live Demo:** https://mcqgenerator-dilesh.streamlit.app/
 
 
 Welcome to the MCQ Generator! This web-based application helps you generate multiple choice questions (MCQs) from uploaded PDFs, text files, or manually provided text. Built using Streamlit and Python, the app allows users to specify the number of MCQs, subject, and complexity level to generate tailored questions.
