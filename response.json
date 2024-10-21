@@ -1,0 +1,30 @@
+{
+    "quizzes": [
+        {
+            "question_number": 1,
+            "question": "First generated question here based on {text} and {subject}",
+            "options": [
+                "A) Option A",
+                "B) Option B",
+                "C) Option C",
+                "D) Option D"
+            ],
+            "correct_answer": "B",
+            "difficulty": "Medium",
+            "explanation": "Explanation for the correct answer."
+        },
+        {
+            "question_number": 2,
+            "question": "Second generated question here based on {text} and {subject}",
+            "options": [
+                "A) Option A",
+                "B) Option B",
+                "C) Option C",
+                "D) Option D"
+            ],
+            "correct_answer": "C",
+            "difficulty": "Hard",
+            "explanation": "Explanation for the correct answer."
+        }
+    ]
+}

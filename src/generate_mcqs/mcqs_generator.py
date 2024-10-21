@@ -9,7 +9,7 @@ from langchain.prompts import PromptTemplate
 from langchain.schema.runnable import RunnableSequence
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
-from langchain.callbacks import get_openai_callback
+from langchain_community.callbacks.manager import get_openai_callback
 from langchain_mistralai import ChatMistralAI
 
 from src.generate_mcqs.utils import read_file, get_table_data
@@ -43,7 +43,7 @@ prompt1 = PromptTemplate(
     template=TEMPLATE1,
 )
 
-chain1 = LLM(llm=llm, prompt=prompt1, output_key="quiz", verbose=True)
+chain1 = LLMChain(llm=llm, prompt=prompt1, output_key="quiz", verbose=True)
 
 TEMPLATE2 = """
 You are tasked with evaluating the quiz based on the subject: {subject}. 

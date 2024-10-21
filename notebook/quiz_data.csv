@@ -1,6 +1,6 @@
 MCQ,Choices,Correct
-What is Generative AI primarily used for?,A) Analyzing existing data | B) Creating new data | C) Storing data | D) Deleting data | E) Sorting data,B) Creating new data
-Which of the following is an example of a generative AI model?,A) Excel | B) ChatGPT | C) Google Maps | D) Microsoft Word | E) Adobe Photoshop,B) ChatGPT
-What type of neural network is commonly used in generative AI systems?,A) Convolutional Neural Networks (CNNs) | B) Recurrent Neural Networks (RNNs) | C) Transformer-based Neural Networks | D) Feedforward Neural Networks | E) Radial Basis Function Networks,C) Transformer-based Neural Networks
-Which industry has raised concerns about the potential misuse of generative AI?,A) Agriculture | B) Manufacturing | C) Cybersecurity | D) Retail | E) Hospitality,C) Cybersecurity
-Which company has developed generative AI models like DALL-E?,A) Apple | B) Amazon | C) OpenAI | D) IBM | E) Tesla,C) OpenAI
+What is the primary purpose of generative AI?,A) To analyze existing data | B) To create new data based on patterns learned from training data | C) To perform calculations | D) To store information | E) To predict future events,B
+Which of the following is an example of a generative AI model?,A) Google Search | B) ChatGPT | C) Excel | D) Photoshop | E) Microsoft Word,B
+What type of neural network has significantly contributed to the advancement of generative AI?,A) Convolutional Neural Networks | B) Recurrent Neural Networks | C) Transformer-based Deep Neural Networks | D) Feedforward Neural Networks | E) Autoencoders,C
+Which of the following is a text-to-image AI generation system?,A) ChatGPT | B) Stable Diffusion | C) Copilot | D) LLaMA | E) Sora,B
+What is one of the potential concerns about the use of generative AI?,A) Increased job security | B) Improved data privacy | C) Cybercrime and the use of deepfakes | D) Enhanced data storage | E) Faster internet speeds,C
