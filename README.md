@@ -1,4 +1,5 @@
-# 📝 MCQ Generator
+# 📝 MCQ Generator : https://mcqgenerator-dilesh.streamlit.app/
+
 
 Welcome to the MCQ Generator! This web-based application helps you generate multiple choice questions (MCQs) from uploaded PDFs, text files, or manually provided text. Built using Streamlit and Python, the app allows users to specify the number of MCQs, subject, and complexity level to generate tailored questions.
 
@@ -20,35 +21,33 @@ Welcome to the MCQ Generator! This web-based application helps you generate mult
 - **dotenv**: To manage environment variables securely.
 
 ## <b>Setup and Installation</b>
-### Prerequisites
+#### Prerequisites
 - Python 3.10 or higher
 - Virtual environment (recommended)
-### Installation Steps
-1. **Clone the Repository**:
+#### Installation Steps
+<b>1. **Clone the Repository**:</b>
    ```bash
    git clone https://github.com/your-username/mcq-generator.git
    cd mcq-generator
 
 
-2. Create and Activate Virtual Environment:
+<b>2. Create and Activate Virtual Environment:</b>
+```bash
+   python -m venv venv
+   venv\Scripts\activate
 
-python -m venv venv
-venv\Scripts\activate
+<b>3. Install Required Packages:</b>
+```bash
+   pip install -r requirements.txt
 
+<b>4. Set Up Environment Variables:</b> 
+- Create a .env file in the root directory with your Mistral AI API key:
+- MISTRAL_API_KEY=your-api-key-here
+- Get your API key from Mistral AI.
 
-3. Install Required Packages:
-
-pip install -r requirements.txt
-
-
-4. Set Up Environment Variables: Create a .env file in the root directory with your Mistral AI API key:
-
-MISTRAL_API_KEY=your-api-key-here
-Get your API key from Mistral AI.
-
-5. Run the Application:
-
-streamlit run streamlit_app.py
+<b>5. Run the Application:</b>
+```bash
+   streamlit run streamlit_app.py
 This will start the Streamlit server and open the app in your web browser.
 
 <b>Usage</b>
