@@ -34,22 +34,23 @@ Welcome to the MCQ Generator! This web-based application helps you generate mult
 
 
 <b>2. Create and Activate Virtual Environment:</b>
-```bash```
+```bash
    python -m venv venv
    venv\Scripts\activate
-
+```
 <b>3. Install Required Packages:</b>
-```bash```
+```bash
    pip install -r requirements.txt
-
+```
 <b>4. Set Up Environment Variables:</b> 
 - Create a .env file in the root directory with your Mistral AI API key:
 - MISTRAL_API_KEY=your-api-key-here
 - Get your API key from Mistral AI.
 
 <b>5. Run the Application:</b>
-```bash```
+```bash
    streamlit run streamlit_app.py
+```
 This will start the Streamlit server and open the app in your web browser.
 
 <b>Usage</b>
