@@ -28,18 +28,18 @@ Welcome to the MCQ Generator! This web-based application helps you generate mult
 - Virtual environment (recommended)
 #### Installation Steps
 <b>1. **Clone the Repository**:</b>
-   ```bash
+   ```bash```
    git clone https://github.com/your-username/mcq-generator.git
    cd mcq-generator
 
 
 <b>2. Create and Activate Virtual Environment:</b>
-```bash
+```bash```
    python -m venv venv
    venv\Scripts\activate
 
 <b>3. Install Required Packages:</b>
-```bash
+```bash```
    pip install -r requirements.txt
 
 <b>4. Set Up Environment Variables:</b> 
@@ -48,7 +48,7 @@ Welcome to the MCQ Generator! This web-based application helps you generate mult
 - Get your API key from Mistral AI.
 
 <b>5. Run the Application:</b>
-```bash
+```bash```
    streamlit run streamlit_app.py
 This will start the Streamlit server and open the app in your web browser.
 
